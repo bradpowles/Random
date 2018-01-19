@@ -1,10 +1,9 @@
 class GlobalMem:
-    a = 6
-    def __init__(self):
-        self.a = 7
+    pass
 
-    def something(self):
-        print(self.a)
+GlobalMem.a = 10
 
-GlobalMem().something()
+def func():
+    print(GlobalMem.a)
 
+func()
