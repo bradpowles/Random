@@ -2,7 +2,7 @@ import itemobjects
 
 
 class calculator:
-    users = ['Tom Bell']
+    function = 'Carry out calculations.'
     def add(self):
         number = 1
         return number
