@@ -1,6 +1,3 @@
-import itemobjects
-
-
 class calculator:
     function = 'Carry out calculations.'
     def add(self):
@@ -9,5 +6,6 @@ class calculator:
 
 
 def setup():
-    itemobjects.programs.types.append(calculator)
+    f = open('programs.json', 'a')
+    f.write(str(calculator))
 
