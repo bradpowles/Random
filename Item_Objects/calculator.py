@@ -7,5 +7,5 @@ class calculator:
 
 def setup():
     f = open('programs.json', 'a')
-    f.write(str(calculator))
+    f.write(str(calculator)+'\n')
 

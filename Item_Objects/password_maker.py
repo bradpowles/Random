@@ -7,5 +7,5 @@ class password_maker:
 
 def setup():
     f = open('programs.json', 'a')
-    f.write(str(password_maker))
+    f.write(str(password_maker)+'\n')
 
