@@ -6,6 +6,6 @@ class password_maker:
 
 
 def setup():
-    f = open('programs.json', 'a')
+    f = open('programs.csv', 'a')
     f.write(str(password_maker)+'\n')
 

@@ -1,6 +1,6 @@
 import os
 read = []
-f = open('programs.json', 'w')
+f = open('programs.csv', 'w')
 for file in os.listdir("."):
     if file.endswith("r.py") and file not in read:
         exec("import " + file[:-3] + '\n' + file[:-3] + ".setup()")
@@ -10,7 +10,7 @@ for file in os.listdir("."):
 class programs:
     def __init__(self):
         self.program = []
-        for line in open('programs.json', 'r'):
+        for line in open('programs.csv', 'r'):
             self.program.append(line)
     def all(self):
         return self.program

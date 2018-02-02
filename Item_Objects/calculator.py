@@ -6,6 +6,6 @@ class Calculator():
 
 
 def setup():
-    f = open('programs.json', 'a')
+    f = open('programs.csv', 'a')
     f.write(str(Calculator)+'\n')
 
