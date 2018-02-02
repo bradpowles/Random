@@ -16,8 +16,8 @@ class programs:
         return self.program
 
 # end
-
-for i in programs().all():
+menu = programs()
+for i in menu.all():
     print('-----')
     print(i)
     print(eval(i).function)
