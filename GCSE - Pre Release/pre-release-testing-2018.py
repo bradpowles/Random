@@ -5,22 +5,19 @@ class Order:
         for item in parts:
             valid = False
             while valid == False:
-                print(item[0])
-                for part in item:
-                    print("{}: £{} Remaining stock: {}".format(part[0], part[1], part[2]))
+                print("-----{}-----".format(item))
+                for component in parts[item]:
+                    print("{}: £{} Remaining stock: {}".format(component[0], component[1], component[2]))
                 partchoice = input("{}: ".format(item[0]))
-                for u in range(1, len(item)):
-                    if partchoice == item[u][0]:
-                        if item[u][2] > 0:
-                            item[u][2] += -1
-                            valid = True
-                            wholeprice += item[u][1]
-                            order.append(item[u][0])
-                        else:
-                            print("None left")
-
+                for component in parts[item]:
+                    if partchoice == component[0]:
+                        order.append(component)
+                        parts[item][component][2] -= 1
+                        valid = True
                 if valid == False:
-                    print("Not a valid order")
+                    print("Try again.")
+            print(order)
+
 
         print("Order Finished")
         print(order)
