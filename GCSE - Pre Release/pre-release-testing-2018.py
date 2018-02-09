@@ -1,7 +1,7 @@
 class Order:
     def new(self, parts):
         wholeprice = 0
-        order = []
+        order = {}
         for item in parts:
             valid = False
             while valid == False:
@@ -11,8 +11,7 @@ class Order:
                 partchoice = input("{}: ".format(item[0]))
                 for component in parts[item]:
                     if partchoice == component[0]:
-                        order.append(component)
-                        parts[item][component][2] -= 1
+                        order[item] = component
                         valid = True
                 if valid == False:
                     print("Try again.")
