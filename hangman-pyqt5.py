@@ -95,7 +95,7 @@ class Hangman(QMainWindow):
     def main(self, guess):
         self.lettersguessed.append(guess)
         self.wordguessing(self.word, self.lettersguessed)
-        if self.numofguesses == self.allowedguesses:
+        if self.numofguesses == self.allowedguesses - 1:
             self.end(False)
         else:
             if guess in self.word:
