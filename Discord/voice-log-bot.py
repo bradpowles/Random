@@ -2,8 +2,8 @@ from discord.ext.commands import Bot
 
 client = Bot(description="Logs when a person joins/leaves/is moved into/from a voice channel.", command_prefix="!", pm_help=False)
 
-TOKEN = 'MzkyMzM3MTM5ODYzNjUwMzE3.DXxOqA.nr5Oy2rG6san14k1AwAzVfbACFk'
-CHANNEL_ID = '417314580423901184'
+TOKEN = ''
+CHANNEL_ID = ''
 
 @client.event
 async def on_ready():
