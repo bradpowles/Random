@@ -5,6 +5,7 @@ client = Bot(description="Logs when a person joins/leaves/is moved into/from a v
 TOKEN = ''
 CHANNEL_ID = ''
 
+
 @client.event
 async def on_ready():
     print('Logged in as:')
