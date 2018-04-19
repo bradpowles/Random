@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zodiac Facts!</title>
+    <style>
+        body {
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>See click on your respective sign below or enter your date of birth:</p>
+
+    <table>
+        <tr>
+            <td>
+                <a href="{{ url_for('signinfo', sign='aries') }}">Aries</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='leo') }}">Leo</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='sagittarius') }}">Sagittarius</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='taurus') }}">Taurus</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='virgo') }}">Virgo</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='capricorn') }}">Capricorn</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="{{ url_for('signinfo', sign='gemini') }}">Gemini</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='libra') }}">Libra</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='aquarius') }}">Aquarius</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='cancer') }}">Cancer</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='scorpio') }}">Scorpio</a>
+            </td>
+            <td>
+                <a href="{{ url_for('signinfo', sign='pisces') }}">Pisces</a>
+            </td>
+        </tr>>
+    </table>
+
+    <form action="/_getsign" method="post">
+        <h3>Date 1~31: </h3>
+        <input type =number name =date>
+        <h3>Month 1~12:</h3>
+        <input type =number name =month>
+        <br><br>
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+</html>
