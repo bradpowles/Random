@@ -55,8 +55,8 @@ data = {
     },
     'cancer' : {
         'name': 'cancer',
-        'start_range' : [21, 5],
-        'end_range' : [22, 6],
+        'start_range' : [21, 6],
+        'end_range' : [22, 7],
         'fact' : "Cancers are very emotional creatures who are very in tune with those around them. Given the emphasis they place on interpersonal relationships, tiffs are never just tiffs. If you hurt a Cancer, be aware that they might not welcome you back into their lives with such open arms the second time around, if at all."
     },
     'scorpio' : {
